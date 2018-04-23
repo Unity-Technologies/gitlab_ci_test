@@ -20,7 +20,7 @@ build_package:linux:
     - exit 0
 
 test:mac:
-  stage: build_package
+  stage: test
   tags:
     - mac
   script:
