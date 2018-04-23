@@ -1,0 +1,28 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - build_package
+  - test
+
+build_package:mac:
+  stage: build_package
+  tags:
+    - mac
+  script:
+    - exit 0
+
+build_package:linux:
+  stage: build_package
+  tags:
+    - linux
+  script:
+    - exit 0
+
+test:mac:
+  stage: build_package
+  tags:
+    - mac
+  script:
+    - exit 1
+
